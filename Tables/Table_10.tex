@@ -1,0 +1,40 @@
+\begin{table}[htbp]\centering
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\caption{ML structural estimations Apesteguia by subtask \label{tab:Success}}
+\begin{tabular}{l*{6}{c}}
+\toprule
+                    &\multicolumn{1}{c}{(1)}&\multicolumn{1}{c}{(2)}&\multicolumn{1}{c}{(3)}&\multicolumn{1}{c}{(4)}&\multicolumn{1}{c}{(5)}&\multicolumn{1}{c}{(6)}\\
+                    &\multicolumn{1}{c}{HL}&\multicolumn{1}{c}{HL safe}&\multicolumn{1}{c}{BRET}&\multicolumn{1}{c}{BRETsafe}&\multicolumn{1}{c}{EGnosafe}&\multicolumn{1}{c}{EG}\\
+\midrule
+r                   &                     &                     &                     &                     &                     &                     \\
+female              &        0.16\sym{*}  &        0.18\sym{***}&      -0.032         &        0.17\sym{**} &        0.20\sym{**} &        0.34\sym{*}  \\
+                    &      (0.09)         &      (0.06)         &      (0.06)         &      (0.08)         &      (0.09)         &       (0.2)         \\
+\addlinespace
+soep                &                     &                     &                     &                     &      -0.052\sym{*}  &       -0.11\sym{**} \\
+                    &                     &                     &                     &                     &      (0.03)         &      (0.05)         \\
+\addlinespace
+Constant            &        0.59\sym{***}&        0.47\sym{***}&        0.10\sym{**} &      -0.097         &        0.75\sym{***}&        1.10\sym{***}\\
+                    &      (0.05)         &      (0.05)         &      (0.04)         &      (0.07)         &       (0.2)         &       (0.3)         \\
+\midrule
+LN\_lambda           &                     &                     &                     &                     &                     &                     \\
+female              &       -0.24         &        0.33         &       -0.24\sym{**} &        0.28\sym{**} &        0.46\sym{*}  &        0.51         \\
+                    &       (0.3)         &       (0.4)         &       (0.1)         &       (0.1)         &       (0.3)         &       (0.8)         \\
+\addlinespace
+Constant            &        2.15\sym{***}&        2.31\sym{***}&        1.58\sym{***}&        1.26\sym{***}&        1.39\sym{***}&        1.47\sym{***}\\
+                    &       (0.2)         &       (0.2)         &      (0.09)         &       (0.1)         &       (0.3)         &       (0.3)         \\
+\midrule
+kapp                &                     &                     &                     &                     &                     &                     \\
+female              &     -0.0056         &       0.019\sym{*}  &      0.0085         &      0.0053         &       0.053         &        0.11\sym{**} \\
+                    &      (0.02)         &      (0.01)         &      (0.01)         &     (0.004)         &      (0.04)         &      (0.05)         \\
+\addlinespace
+Constant            &        0.81\sym{***}&        0.82\sym{***}&       0.014\sym{*}  &     -0.0016         &       0.053\sym{*}  &       0.062         \\
+                    &      (0.01)         &     (0.008)         &     (0.008)         &     (0.002)         &      (0.03)         &      (0.04)         \\
+\midrule
+Observations        &        1790         &        1650         &       27000         &       19100         &         536         &         580         \\
+Pseudo \(R^{2}\)    &                     &                     &                     &                     &                     &                     \\
+\bottomrule
+\multicolumn{7}{l}{\footnotesize Standard errors in parentheses}\\
+\multicolumn{7}{l}{\footnotesize notes}\\
+\multicolumn{7}{l}{\footnotesize \sym{*} \(p<0.10\), \sym{**} \(p<0.05\), \sym{***} \(p<0.01\)}\\
+\end{tabular}
+\end{table}

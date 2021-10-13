@@ -1,0 +1,58 @@
+\begin{table}[htbp]\centering
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\caption{ML structural diff in diff Apesteguia by task \label{tab:Success}}
+\begin{tabular}{l*{3}{c}}
+\toprule
+                    &\multicolumn{1}{c}{(1)}&\multicolumn{1}{c}{(2)}&\multicolumn{1}{c}{(3)}\\
+                    &\multicolumn{1}{c}{HL}&\multicolumn{1}{c}{BRET}&\multicolumn{1}{c}{EG}\\
+\midrule
+r                   &                     &                     &                     \\
+female              &        0.16\sym{*}  &      -0.032         &        0.19\sym{*}  \\
+                    &      (0.09)         &      (0.06)         &       (0.1)         \\
+\addlinespace
+safe                &       -0.13\sym{*}  &       -0.20\sym{**} &       0.040         \\
+                    &      (0.07)         &      (0.08)         &      (0.10)         \\
+\addlinespace
+femsafe             &       0.067         &        0.20\sym{*}  &       0.082         \\
+                    &       (0.1)         &       (0.1)         &       (0.2)         \\
+\addlinespace
+soep                &                     &                     &      -0.071\sym{**} \\
+                    &                     &                     &      (0.03)         \\
+\addlinespace
+Constant            &        0.59\sym{***}&        0.10\sym{**} &        0.85\sym{***}\\
+                    &      (0.05)         &      (0.04)         &       (0.2)         \\
+\midrule
+LN\_lambda           &                     &                     &                     \\
+female              &       -0.24         &       -0.24\sym{**} &        0.52         \\
+                    &       (0.3)         &       (0.1)         &       (0.3)         \\
+\addlinespace
+safe                &        0.16         &       -0.32\sym{**} &        0.25         \\
+                    &       (0.2)         &       (0.1)         &       (0.5)         \\
+\addlinespace
+femsafe             &        5.21\sym{***}&        0.52\sym{***}&      0.0018         \\
+                    &       (0.6)         &       (0.2)         &       (0.6)         \\
+\addlinespace
+Constant            &        2.15\sym{***}&        1.58\sym{***}&        1.26\sym{***}\\
+                    &       (0.2)         &      (0.09)         &       (0.3)         \\
+\midrule
+kapp                &                     &                     &                     \\
+female              &     -0.0056         &      0.0085         &       0.051         \\
+                    &      (0.02)         &      (0.01)         &      (0.04)         \\
+\addlinespace
+safe                &      0.0048         &      -0.015\sym{*}  &      0.0064         \\
+                    &      (0.01)         &     (0.008)         &      (0.05)         \\
+\addlinespace
+femsafe             &       0.021         &     -0.0032         &       0.046         \\
+                    &      (0.02)         &      (0.01)         &      (0.06)         \\
+\addlinespace
+Constant            &        0.81\sym{***}&       0.014\sym{*}  &       0.053\sym{*}  \\
+                    &      (0.01)         &     (0.008)         &      (0.03)         \\
+\midrule
+Observations        &        3440         &       46100         &        1116         \\
+Pseudo \(R^{2}\)    &                     &                     &                     \\
+\bottomrule
+\multicolumn{4}{l}{\footnotesize Standard errors in parentheses}\\
+\multicolumn{4}{l}{\footnotesize notes}\\
+\multicolumn{4}{l}{\footnotesize \sym{*} \(p<0.10\), \sym{**} \(p<0.05\), \sym{***} \(p<0.01\)}\\
+\end{tabular}
+\end{table}
