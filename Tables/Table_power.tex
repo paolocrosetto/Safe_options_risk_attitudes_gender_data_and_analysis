@@ -1,0 +1,20 @@
+\begin{table}
+
+\caption{Power Analysis}
+\centering
+\begin{tabular}[t]{llrrrr}
+\toprule
+\multicolumn{1}{c}{} & \multicolumn{1}{c}{} & \multicolumn{2}{c}{Ex-ante} & \multicolumn{2}{c}{Ex-post} \\
+\cmidrule(l{3pt}r{3pt}){3-4} \cmidrule(l{3pt}r{3pt}){5-6}
+task & treatment & d\_ex\_ante & needed\_N & d\_ex\_post & ex\_post\_power\\
+\midrule
+BRET & Baseline & 0.01 & 156978 & 0.018 & 0.05\\
+EG & Baseline & 0.46 & 75 & 0.605 & 0.93\\
+HL & Baseline & 0.17 & 544 & 0.185 & 0.23\\
+EG & nosafe & 0.17 & 544 & 0.576 & 0.93\\
+BRET & safe & 0.46 & 75 & 0.254 & 0.40\\
+\addlinespace
+HL & safe & 0.46 & 75 & 0.427 & 0.78\\
+\bottomrule
+\end{tabular}
+\end{table}

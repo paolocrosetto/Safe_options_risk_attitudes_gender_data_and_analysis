@@ -11,6 +11,7 @@ library(tidyverse)  # R dialect used in this script
 library(pwr)        # to nicely compute power
 library(broom)      # to format nicely the output of the pwr functions
 library(purrr)      # to apply iteratively the pwr function to all of our data in one go
+library(kableExtra) # to nicely format .tex tables
 
 
 #### 0. Assumptions ####
@@ -83,10 +84,22 @@ ex_post_power <- results %>%
   select(task, treatment, d_ex_post = cohens_d, ex_post_power)
 
 
+## merging ex-ante and ex-post tables in a single object
+
 Table_Power <- 
   ex_ante_power %>% 
   left_join(ex_post_power, by = c("task", "treatment")) %>% 
   arrange(treatment)
 
+## exporting to csv
 Table_Power %>% 
   write_csv("Tables/Table_power.csv")
+
+## exporting to a nicely-formatted latex table
+Table_Power %>% 
+  ungroup() %>% 
+  mutate(needed_N = round(needed_N),
+         ex_post_power = round(ex_post_power,2)) %>% 
+  kable(format = "latex", booktabs = T, caption = "Power Analysis") %>% 
+  add_header_above(c("","","Ex-ante" = 2, "Ex-post" = 2)) %>% 
+  write_file("Tables/Table_power.tex")
